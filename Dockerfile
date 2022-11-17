@@ -1,4 +1,4 @@
-FROM amd64/alpine:latest
+FROM amd64/alpine:latest as build
 WORKDIR /root
 RUN apk add --no-cache git make build-base && \
     git clone --branch master --single-branch https://github.com/Wind4/vlmcsd.git && \
