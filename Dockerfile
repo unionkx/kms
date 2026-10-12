@@ -8,4 +8,4 @@ FROM alpine:latest
 WORKDIR /root
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /usr/bin/vlmcsd
 EXPOSE 1688/tcp
-CMD [ "/usr/bin/vlmcsd", "-D", "-d" ]
+CMD ["/usr/bin/vlmcsd", "-D", "-d"]
